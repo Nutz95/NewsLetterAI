@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Miscellanews Letter IA – by Nico Index</title>
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1024px;
+            margin: 20px auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            position: relative;
+        }
+        .header img {
+            max-width: 200px;
+            margin-bottom: 10px;
+        }
+        .header h1 {
+            color: #333;
+            margin: 0;
+        }
+        .period {
+            text-align: right;
+            font-size: 14px;
+            color: #555;
+            margin-top: 5px;
+        }
+        .toc {
+            background: #007BFF;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .toc ul {
+            list-style: none;
+            padding: 0;
+        }
+        .toc li {
+            margin: 5px 0;
+        }
+        .toc a {
+            color: white;
+            text-decoration: none;
+        }
+        .section {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+        }
+        .section.even {
+            background: #e0f7fa; /* Light cyan background for even sections */
+        }
+        .section.odd {
+            background: #fff3e0; /* Light orange background for odd sections */
+        }
+        .section h2 {
+            color: #007BFF;
+        }
+        .section ul {
+            list-style: none;
+            padding: 0;
+        }
+        .section li {
+            margin: 5px 0;
+        }
+        .section a {
+            color: #333; /* Dark text color for better contrast */
+            text-decoration: none;
+        }
+        .section a:hover {
+            text-decoration: underline;
+        }
+        .video {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .video img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background: #007BFF;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://bitbucket.org/3dms/newsletteria/raw/f7313b9a26a81df72276d7d450ef5626ab6c0ce3/Logo.png" alt="Logo Newsletter">
+            <h1>La Miscellanews Letter IA – by Nico Index</h1>
+            <div class="period">Archive des Newsletters par mois et par semaines</div>
+        </div>
+
+        <div class="toc">
+            <h3>Newsletter Archive</h3>
+            <div id="newsletter-sections">
+                <!-- Sections will be dynamically generated here -->
+            </div>
+        </div>
+
+        <script>
+            // Base URL for the newsletters
+            const baseURL = "https://bitbucket.org/3dms/newsletteria/src/main/";
+
+            // Array of newsletter folders
+            const newsletterFolders = [
+                "2025.02.10-14",
+                // Add more folders as needed
+            ];
+
+            // Function to generate newsletter sections
+            function generateNewsletterSections() {
+                const container = document.getElementById("newsletter-sections");
+                const groupedFolders = groupFoldersByMonth(newsletterFolders);
+
+                Object.keys(groupedFolders).forEach((month, index) => {
+                    const section = document.createElement("div");
+                    section.classList.add("section", index % 2 === 0 ? "even" : "odd");
+
+                    const h2 = document.createElement("h2");
+                    h2.textContent = `Newsletters for ${month}`;
+                    section.appendChild(h2);
+
+                    const ul = document.createElement("ul");
+                    groupedFolders[month].forEach(folder => {
+                        const li = document.createElement("li");
+                        const a = document.createElement("a");
+                        a.href = `${baseURL}${folder}/NewsLetterIA.html`;
+                        a.textContent = `${folder}`;
+                        li.appendChild(a);
+                        ul.appendChild(li);
+                    });
+                    section.appendChild(ul);
+                    container.appendChild(section);
+                });
+            }
+
+            // Function to group folders by month
+            function groupFoldersByMonth(folders) {
+                const grouped = {};
+                folders.forEach(folder => {
+                    const [year, month] = folder.split('.').slice(0, 2);
+                    const key = `${year}.${month}`;
+                    if (!grouped[key]) {
+                        grouped[key] = [];
+                    }
+                    grouped[key].push(folder);
+                });
+                return grouped;
+            }
+
+            // Generate sections when the page loads
+            generateNewsletterSections();
+        </script>
+
+        <div class="footer">
+            <p>© 2025 - Cerebris | All rights reserved</p>
+        </div>
+    </div>
+</body>
+</html>
