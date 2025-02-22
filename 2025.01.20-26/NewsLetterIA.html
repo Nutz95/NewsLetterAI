@@ -1,0 +1,225 @@
+<style>
+    body {
+        font-family: Calibri, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 1024px;
+        margin: 20px auto;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+        text-align: center;
+        padding-bottom: 20px;
+        position: relative;
+    }
+    .header img {
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+    .header h1 {
+        color: #333;
+        margin: 0;
+    }
+    .period {
+        text-align: right;
+        font-size: 14px;
+        color: #555;
+        margin-top: 5px;
+    }
+    .toc {
+        background: #007BFF;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .toc ul {
+        list-style: none;
+        padding: 0;
+    }
+    .toc li {
+        margin: 5px 0;
+    }
+    .toc a {
+        color: white;
+        text-decoration: none;
+    }
+    .section {
+        margin-top: 20px;
+        padding: 15px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .section h2 {
+        color: #007BFF;
+    }
+    .article {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .article:last-child {
+        border-bottom: none;
+    }
+    .video {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .video img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+    .button {
+        display: block;
+        width: 200px;
+        margin: 20px auto;
+        padding: 10px;
+        background: #007BFF;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        color: #777;
+    }
+	.nav-link {
+		display: inline-block;
+		margin-top: 10px;
+	}
+	.nav-link a {
+		color: #007BFF;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	.nav-link a:hover {
+		text-decoration: underline;
+	}
+</style>
+
+<div class="container">
+    <div class="header">
+        <img src="https://raw.githubusercontent.com/Nutz95/NewsLetterAI/refs/heads/main/Logo.png" alt="Logo Newsletter">
+        <h1> La Miscellanews Letter IA – by Nico</h1>
+        <div class="period">Période du 22 février 2025 au 22 février 2025</div>
+		<div class="nav-link">
+			<a href="https://nutz95.github.io/NewsLetterAI/">Retour à l'index</a>
+        </div>
+    </div>
+
+    <div class="toc">
+        <h3>Sommaire</h3>
+        <ul>
+            <li><a href="#llm">LLM et génération de texte</a></li>
+            <li><a href="#image">Génération d'images</a></li>
+            <li><a href="#projets">Projets et initiatives</a></li>
+        </ul>
+    </div>
+
+    <div id="llm" class="section">
+        <h2>LLM et génération de texte</h2>
+        <div class="article">
+            <p>Une vague de papiers de recherche de plusieurs acteurs (google, Sakano.AI, etc..) prennent le chemin vers une version améliorée des transformers qui permettent aux modèles d'avoir une mémoire à court/moyen/long terme pendant le runtime, c'est à dire sans apprentissage préalable ni base de données.</p>
+            <h3>Titans (google)</h3>
+            <p>Vidéo qui décrit les principes derrière TITANS:</p>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=x8jFFhCLDJY" target="_blank">
+                    <img src="https://img.youtube.com/vi/x8jFFhCLDJY/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+		</div>
+		<div class="article">
+            <h3>Tansformers² (Sakana.ai)</h3>
+            <p>Ici une vidéo qui décris les principes derrière Transfermers²:</p>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=rx0wP9k4wGM" target="_blank">
+                    <img src="https://img.youtube.com/vi/rx0wP9k4wGM/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+        <div class="article">
+            <h3>DeepSeek R1, le modèle opensource avec chaine de raisonnement (alternative à ChatGpt O1)</h3>
+            <h4>Tests DeepSeek R1 (671b):</h4>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=bOsvI3HYHgI" target="_blank">
+                    <img src="https://img.youtube.com/vi/bOsvI3HYHgI/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+		</div>
+		<div class="article">
+            <h3>Tests DeepSeek R1 en local</h3>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=E3NPHRSalE8" target="_blank">
+                    <img src="https://img.youtube.com/vi/E3NPHRSalE8/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+		</div>
+		<div class="article">
+            <h3>Sortie de LMStudio 0.3.8 (support pour DeepSeek R1)</h3>
+            <p>Lien vers le site officiel: <a href="https://installers.lmstudio.ai/win32/x64/0.3.8-4/LM-Studio-0.3.8-4-x64.exe">https://installers.lmstudio.ai/win32/x64/0.3.8-4/LM-Studio-0.3.8-4-x64.exe</a></p>
+        </div>
+        <div class="article">
+            <h3>Open IA - OPERATOR</h3>
+            <p>Une nouvelle fonctionnalité d'OpenIA qui permet d'executer des tâches à partir d'un browser sur le cloud. On pourra executer des réservation ou des commandes en ligne via cette nouvelle fonctionnalités (disponible uniquement pour les clients pro dans un premier temps)</p>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=4e2K50CO4iM" target="_blank">
+                    <img src="https://img.youtube.com/vi/4e2K50CO4iM/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+        <div class="article">
+            <h3>OpenIA - ChatGPT Task</h3>
+            <p>Autre fonctionnalité qui à son intérêt : TASK qui permet d'executer du code ou des scripts directement dans ChatGpt:</p>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=2-jhqPEtg_w" target="_blank">
+                    <img src="https://img.youtube.com/vi/2-jhqPEtg_w/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="image" class="section">
+        <h2>Génération d'images</h2>
+        <div class="article">
+            <h3>Krea.AI - Image 2 3D</h3>
+            <p>Petite démo assez impressionnante qui permet de convertir une image en objet 3D et de l'utiliser pour générer du contenu interactif</p>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=0ER5qfoJXd0" target="_blank">
+                    <img src="https://img.youtube.com/vi/0ER5qfoJXd0/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="projets" class="section">
+        <h2>Projets et initiatives</h2>
+        <div class="article">
+            <h3>Project Stargate</h3>
+            <p>Plus d'informations sur le projet Stargate lancé par le gouvernement américain après l'investiture de Trump:</p>
+            <ul>
+                <li>Qui sont les acteurs</li>
+                <li>Qui et comment les acteurs vont financer le projet</li>
+            </ul>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=6vqN8jBfQb8" target="_blank">
+                    <img src="https://img.youtube.com/vi/6vqN8jBfQb8/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 - Cerebris | Tous droits réservés</p>
+		<div class="nav-link">
+			<a href="https://nutz95.github.io/NewsLetterAI/">Retour à l'index</a>
+        </div>
+    </div>
+</div>

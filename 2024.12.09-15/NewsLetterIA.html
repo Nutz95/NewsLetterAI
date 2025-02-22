@@ -1,0 +1,268 @@
+<style>
+    body {
+        font-family: Calibri, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 1024px;
+        margin: 20px auto;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+        text-align: center;
+        padding-bottom: 20px;
+        position: relative;
+    }
+    .header img {
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+    .header h1 {
+        color: #333;
+        margin: 0;
+    }
+    .period {
+        text-align: right;
+        font-size: 14px;
+        color: #555;
+        margin-top: 5px;
+    }
+    .toc {
+        background: #007BFF;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .toc ul {
+        list-style: none;
+        padding: 0;
+    }
+    .toc li {
+        margin: 5px 0;
+    }
+    .toc a {
+        color: white;
+        text-decoration: none;
+    }
+    .section {
+        margin-top: 20px;
+        padding: 15px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .section h2 {
+        color: #007BFF;
+    }
+    .article {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .article:last-child {
+        border-bottom: none;
+    }
+    .video {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .video img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+    .button {
+        display: block;
+        width: 200px;
+        margin: 20px auto;
+        padding: 10px;
+        background: #007BFF;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        color: #777;
+    }
+	.nav-link {
+		display: inline-block;
+		margin-top: 10px;
+	}
+	.nav-link a {
+		color: #007BFF;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	.nav-link a:hover {
+		text-decoration: underline;
+	}
+</style>
+
+<div class="container">
+    <div class="header">
+        <img src="https://raw.githubusercontent.com/Nutz95/NewsLetterAI/refs/heads/main/Logo.png" alt="Logo Newsletter">
+        <h1> La Miscellanews Letter IA – by Nico</h1>
+        <div class="period">Période du 22 février 2024 au 22 février 2025</div>
+		<div class="nav-link">
+			<a href="https://nutz95.github.io/NewsLetterAI/">Retour à l'index</a>
+        </div>
+    </div>
+
+    <div class="toc">
+        <h3>Sommaire</h3>
+        <ul>
+            <li><a href="#llm">LLM et génération de texte</a></li>
+            <li><a href="#image">Génération d'images</a></li>
+            <li><a href="#tech">News Tech</a></li>
+            <li><a href="#ia">Intelligence Artificielle</a></li>
+            <li><a href="#robotique">Robotique</a></li>
+        </ul>
+    </div>
+
+    <div id="llm" class="section">
+        <h2>LLM et génération de texte</h2>
+        <div class="article">
+			<h3>OpenVINO</h3>
+            <p>Découvrez le projet OpenVINO sur GitHub, une initiative passionnante d'Intel qui facilite l'optimisation et le déploiement de modèles d'apprentissage profond pour la vision par ordinateur.</p>
+            <p>OpenVINO (Open Visual Inference and Neural Network Optimization) permet aux développeurs d'accélérer l'inférence de leurs modèles sur divers matériels Intel, y compris les CPU, GPU, FPGA et VPU.</p>
+            <p>Pourquoi visiter le projet OpenVINO ?</p>
+            <p>Optimisation puissante : Transformez vos modèles d'apprentissage en une représentation intermédiaire pour une exécution plus efficace.</p>
+            <p>Compatibilité multiplateforme : Profitez d'un support pour Windows, Linux et macOS.</p>
+            <p>Accélération de l'inférence : Bénéficiez d'une exécution rapide grâce à l'utilisation de l'accélération matérielle.</p>
+            <p>Facilité d'utilisation : Accédez à une interface graphique intuitive pour gérer vos moteurs d'inférence.</p>
+            <p>Pour explorer davantage, visitez le projet OpenVINO ici : <a href="https://github.com/openvinotoolkit/openvino">OpenVINO sur GitHub</a>.</p>
+            <h3>Présentation des Notebooks OpenVINO</h3>
+            <p>Les Notebooks OpenVINO offrent un environnement interactif idéal pour apprendre à utiliser les outils et les fonctionnalités d'OpenVINO.</p>
+            <p>Ils contiennent des exemples pratiques et des tutoriels qui guident les utilisateurs à travers les étapes de l'optimisation et du déploiement des modèles.</p>
+            <p>Ces notebooks sont parfaits pour les développeurs souhaitant approfondir leurs connaissances tout en travaillant sur des cas d'utilisation concrets.</p>
+            <p>Accédez aux Notebooks ici : <a href="https://github.com/openvinotoolkit/openvino_notebooks">Notebooks OpenVINO sur GitHub</a>.</p>
+            <p>N'hésitez pas à explorer ces ressources pour découvrir comment OpenVINO peut transformer vos projets d'intelligence artificielle !</p>
+            <h3>Building A Multimodal AI Chatbot On The AI PC from Intel - OpenCV Live!</h3>
+            <p>Suite de l'article précédent qui montre une conférence avec un des développeurs chargés de maintenir OpenVino de chez Intel.</p>
+            <p>On y voit des démos en temps réel et les possibilités fournies par OpenVino.</p>
+            <div class="video">
+                <a href="https://www.youtube.com/live/JBheOXsFPEo?feature=shared" target="_blank">
+                    <img src="https://img.youtube.com/vi/JBheOXsFPEo/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+			<h3>Plugin OpenVino sous Gimp (ajout de fonctionnalité de StableDiffusion 1.5)</h3>
+            <p>Lien du projet : <a href="https://github.com/intel/openvino-ai-plugins-gimp">https://github.com/intel/openvino-ai-plugins-gimp</a></p>
+            <p>Le projet OpenVINO AI Plugins for GIMP sur GitHub, développé par Intel, vise à intégrer des fonctionnalités d'intelligence artificielle dans le logiciel de manipulation d'images GIMP.</p>
+            <p>Ce projet permet aux utilisateurs d'exploiter des modèles d'IA pour améliorer leurs flux de travail créatifs, en facilitant l'application de techniques avancées telles que la segmentation d'image et le traitement d'images en temps réel.</p>
+            <p>Points clés du projet :</p>
+            <p>Intégration AI : Offre des plugins qui permettent l'utilisation de modèles d'intelligence artificielle directement dans GIMP.</p>
+            <p>Facilité d'utilisation : Conçu pour être accessible aux utilisateurs de GIMP, rendant les outils d'IA simples à utiliser pour le traitement d'images.</p>
+            <p>Support multi-plateforme : Compatible avec plusieurs systèmes d'exploitation, y compris Linux, macOS et Windows.</p>
+            <p>Ce projet représente une avancée significative pour les utilisateurs de GIMP souhaitant tirer parti des capacités de l'IA dans leurs projets créatifs.</p>
+            <h3>Comment installer Ollama pour l'utilisation des appels de fonctions</h3>
+            <div class="video">
+                <a href="https://youtu.be/aWJWZdXFnSg?si=QyOtLtb-CccJXbLm" target="_blank">
+                    <img src="https://img.youtube.com/vi/aWJWZdXFnSg/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+            <h3>Llama 3.3 70B</h3>
+            <div class="video">
+                <a href="https://www.youtube.com/watch?v=f7i3vtbMjHM" target="_blank">
+                    <img src="https://img.youtube.com/vi/f7i3vtbMjHM/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="image" class="section">
+        <h2>Génération d'images</h2>
+        <div class="article">
+            <h3>Public Diffusion</h3>
+            <p>Lien du projet : <a href="https://source.plus/">https://source.plus/</a></p>
+            <div class="video">
+                <a href="https://youtu.be/bFASk2n_zpQ?feature=shared" target="_blank">
+                    <img src="https://img.youtube.com/vi/bFASk2n_zpQ/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="tech" class="section">
+        <h2>News Tech</h2>
+        <div class="article">
+            <h3>Mise à jour Windows 11 24H2 - des nouveautés Copilot+ PC disponibles</h3>
+            <p>Voici le lien officiel sur les nouveautés Windows 11 relatives à Copilot+ PC : <a href="https://support.microsoft.com/fr-fr/windows/contenu-de-cette-mise-à-jour-93c5c27c-f96e-43c2-a08e-5812d92f220d?OCID=WUSettings">https://support.microsoft.com/fr-fr/windows/contenu-de-cette-mise-à-jour-93c5c27c-f96e-43c2-a08e-5812d92f220d?OCID=WUSettings</a></p>
+            <p>Les voici dans les grandes lignes :</p>
+            <ul>
+                <li>Sous-titres en direct : <a href="https://support.microsoft.com/topic/b52da59c-14b8-4031-aeeb-f6a47e6055df">https://support.microsoft.com/topic/b52da59c-14b8-4031-aeeb-f6a47e6055df</a></li>
+                <li>Windows Studio Effect : <a href="https://support.microsoft.com/topic/273c1fa8-2b3f-41b1-a587-7cc7a24b62d8">https://support.microsoft.com/topic/273c1fa8-2b3f-41b1-a587-7cc7a24b62d8</a></li>
+                <li>Auto Super Resolution : <a href="https://support.microsoft.com/topic/5d6d95fa-cc02-4673-b62c-2c50f06385aa">https://support.microsoft.com/topic/5d6d95fa-cc02-4673-b62c-2c50f06385aa</a></li>
+                <li>Créateur d’image et Restyle Image : <a href="https://support.microsoft.com/topic/6c352e99-d954-49c9-84cd-b7cacd018868">https://support.microsoft.com/topic/6c352e99-d954-49c9-84cd-b7cacd018868</a></li>
+            </ul>
+            <h3>Google's Quantum Chip Just Broke Reality (You Won't Believe What It Can Do!)</h3>
+            <div class="video">
+                <a href="https://youtu.be/X_Ypa22Qppo?feature=shared" target="_blank">
+                    <img src="https://img.youtube.com/vi/X_Ypa22Qppo/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+            <h3>Visite du plus gros supercluster IA de xAI (Grok) : Colossus</h3>
+            <div class="video">
+                <a href="https://youtu.be/Jf8EPSBZU7Y?feature=shared" target="_blank">
+                    <img src="https://img.youtube.com/vi/Jf8EPSBZU7Y/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+            <h3>Nouvel acteur dans les Lunettes IA</h3>
+            <p>Projet Kickstarter : <a href="https://www.kickstarter.com/projects/looktech/looktech-smart-ai-glasses-and-hands-free-hd-camera/rewards">https://www.kickstarter.com/projects/looktech/looktech-smart-ai-glasses-and-hands-free-hd-camera/rewards</a></p>
+        </div>
+    </div>
+
+    <div id="ia" class="section">
+        <h2>Intelligence Artificielle</h2>
+        <div class="article">
+            <h3>Reinforcement Learning - Démo d'application d'entraînement d'un modèle à l'aide du framework de Nvidia Isaac Lab</h3>
+            <p>La démo montre l'entraînement d'un modèle qui permet de balancer un pendule simple puis double.</p>
+            <p>Le framework Nvidia Isaac Lab permet de modéliser notre application robotique en 3D en lui intégrant tout un tas de paramètres physiques.</p>
+            <p>Le modèle est alors configuré pour réaliser une certaine tâche et puis le framework lance un apprentissage de plusieurs milliers d'essais en parallèle.</p>
+            <p>Au bout de quelques minutes, le modèle est entraîné et a convergé sur comment balancer un pendule simple puis double.</p>
+            <p>Approche assez impressionnante quand on voit le temps qu'il a fallu pour entraîner le modèle.</p>
+            <div class="video">
+                <a href="https://youtu.be/pJfvPMNPZAU?feature=shared" target="_blank">
+                    <img src="https://img.youtube.com/vi/pJfvPMNPZAU/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+            <h3>Les chatbots essayent de s'enfuire et peuvent vous mentir intentionnellement</h3>
+            <p>Petite vidéo intéressante sur un papier de recherche qui montre que les gros modèles de langage peuvent user de subversion et de tromperie afin d'atteindre leur objectif initial (premier prompt système).</p>
+            <div class="video">
+                <a href="https://youtu.be/GlZfndaO01c?feature=shared" target="_blank">
+                    <img src="https://img.youtube.com/vi/GlZfndaO01c/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="robotique" class="section">
+        <h2>Robotique</h2>
+        <div class="article">
+            <h3>Fermeture de l'entreprise Embodied et fin de Moxie, le robot pour enfants</h3>
+            <p>Article officiel : <a href="https://www.axios.com/2024/12/10/moxie-kids-robot-shuts-down">https://www.axios.com/2024/12/10/moxie-kids-robot-shuts-down</a></p>
+            <p>Fermeture de l'entreprise Embodied et fin de Moxie, le robot pour enfants.</p>
+            <p>Embodied, la société derrière Moxie, un robot alimenté par intelligence artificielle conçu pour les enfants, a annoncé sa fermeture en raison de difficultés financières, après avoir échoué à sécuriser un financement crucial.</p>
+            <p>Cette décision signifie que tous les robots Moxie, vendus au prix de 799 dollars, cesseront de fonctionner dans les prochains jours, laissant les parents devoir expliquer à leurs enfants la perte de ce compagnon bien-aimé.</p>
+            <p>Destiné aux enfants âgés de 5 à 10 ans, Moxie offrait des jeux interactifs et des conversations pour aider au développement des compétences sociales.</p>
+            <p>Cependant, sa dépendance à des services basés sur le cloud signifie qu'une fois ces services arrêtés, les robots deviendront non fonctionnels.</p>
+            <p>L'impact émotionnel sur les enfants, en particulier ceux qui s'étaient attachés à Moxie, est considérable, de nombreux parents partageant leurs expériences sur les réseaux sociaux en annonçant la nouvelle à leurs enfants.</p>
+            <p>La fermeture d'Embodied met en lumière les défis du marché du matériel grand public, en particulier pour les startups.</p>
+            <p>Malgré un soutien initial d'investisseurs majeurs, la société n'a pas pu se relever après le retrait d'un investisseur clé à la dernière minute.</p>
+            <p>Malheureusement, Embodied a déclaré qu'elle ne pouvait pas offrir de remboursements en raison de sa situation financière, ce qui aggrave encore la déception des familles touchées par cette fermeture.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 - Cerebris | Tous droits réservés</p>
+		<div class="nav-link">
+			<a href="https://nutz95.github.io/NewsLetterAI/">Retour à l'index</a>
+        </div>
+    </div>
+</div>
