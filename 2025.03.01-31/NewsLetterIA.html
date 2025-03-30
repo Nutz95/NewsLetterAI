@@ -1,0 +1,329 @@
+<style>
+    body {
+        font-family: Calibri, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 1024px;
+        margin: 20px auto;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+        text-align: center;
+        padding-bottom: 20px;
+        position: relative;
+    }
+    .header img {
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+    .header h1 {
+        color: #333;
+        margin: 0;
+    }
+    .period {
+        text-align: right;
+        font-size: 14px;
+        color: #555;
+        margin-top: 5px;
+    }
+    .toc {
+        background: #007BFF;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .toc ul {
+        list-style: none;
+        padding: 0;
+    }
+    .toc li {
+        margin: 5px 0;
+    }
+    .toc a {
+        color: white;
+        text-decoration: none;
+    }
+    .section {
+        margin-top: 20px;
+        padding: 15px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .section h2 {
+        color: #007BFF;
+    }
+    .article {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .article:last-child {
+        border-bottom: none;
+    }
+    .video {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .video img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+    .button {
+        display: block;
+        width: 200px;
+        margin: 20px auto;
+        padding: 10px;
+        background: #007BFF;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        color: #777;
+    }
+	.nav-link {
+		display: inline-block;
+		margin-top: 10px;
+	}
+	.nav-link a {
+		color: #007BFF;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	.nav-link a:hover {
+		text-decoration: underline;
+	}
+</style>
+
+<div class="container">
+    <div class="header">
+        <img src="https://bitbucket.org/3dms/newsletteria/raw/f7313b9a26a81df72276d7d450ef5626ab6c0ce3/Logo.png" alt="Logo Newsletter">
+        <h1> La Miscellanews Letter IA – by Nico</h1>
+        <div class="period">Période du 01 Mars au 31 Mars 2025</div>
+		<div class="nav-link">
+			<a href="https://nutz95.github.io/NewsLetterAI/">Retour à l'index</a>
+        </div>
+    </div>
+
+    <div class="toc">
+        <h3>Sommaire</h3>
+        <ul>
+            <li><a href="#llm">LLM et génération de texte</a></li>
+			<li><a href="#dev">Developpement</a></li>
+            <li><a href="#voix">Voix</a></li>
+			<li><a href="#vision">Vision</a></li>
+			<li><a href="#tech">Tech</a></li>
+			<li><a href="#news">News</a></li>
+        </ul>
+    </div>
+    
+    <div id="llm" class="section">
+        <h2>LLM et génération de texte</h2>
+        <div class="article">
+			<div class="article">
+				<h3>[OpenIA] - Une nouvelle gamme d'agent (avec un prix d'entrée entre 2000 et 20000$)</h3>
+				<p>L'article est dispo directement sur perplexity pour ceux que ça intéresse:</p>
+				<p><a href="https://www.perplexity.ai/page/openai-s-20000-ai-agent-nvz8rzw7TZ.ECGL9usO2YQ">https://www.perplexity.ai/page/openai-s-20000-ai-agent-nvz8rzw7TZ.ECGL9usO2YQ</a></p>
+			</div>
+		</div>
+		<div class="article">
+            <h3>Diffusion LLM: Un modèle qui génère toute la sortie par processus de diffusion:</h3>
+			<div class="video">
+                <a href="https://www.youtube.com/watch?v=X1rD3NhlIcE" target="_blank">
+                    <img src="https://img.youtube.com/vi/X1rD3NhlIcE/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+		</div>
+		<div class="article">
+			<h3>[DeepSeek R1] Vidéo bien faite qui détaille l'innovation de DeepSeek qui arrive abilement à optimiser avec un gain de 57x l'algo MLA</h3>
+			<div class="video">
+				<a href="https://www.youtube.com/watch?v=0VLAoVGf_74" target="_blank">
+					<img src="https://img.youtube.com/vi/0VLAoVGf_74/hqdefault.jpg" alt="Aperçu vidéo">
+				</a>
+			</div>
+		</div>
+		<div class="article">
+			<h3>MCP (ModelConceptProtocol) - le framework d'utilisation d'outils par Anthropic - Comment l'utiliser</h3>
+			<div class="video">
+				<a href="https://www.youtube.com/watch?v=VG8H4kmO9Ps" target="_blank">
+					<img src="https://img.youtube.com/vi/VG8H4kmO9Ps/hqdefault.jpg" alt="Aperçu vidéo">
+				</a>
+			</div>
+		</div>
+		<div class="article">
+			<h3>Mistral 3.1</h3>
+			<div class="video">
+				<a href="https://youtu.be/rEBYsHnrPyw?si=e-BWDTsQlua_PLLL" target="_blank">
+					<img src="https://img.youtube.com/vi/rEBYsHnrPyw/hqdefault.jpg" alt="Aperçu vidéo">
+				</a>
+			</div>
+        </div>
+		<div class="article">
+            <h3>Manus - l'agent All In One qui fait tout</h3>
+			<div class="video">
+                <a href="https://www.youtube.com/watch?v=wVvfXZm4Lvg" target="_blank">
+                    <img src="https://img.youtube.com/vi/wVvfXZm4Lvg/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+		<div class="article">
+            <h3>[OpenIA] - "Agent API"</h3>
+			<div class="video">
+                <a href="https://www.youtube.com/watch?v=-fPZsngNMFs" target="_blank">
+                    <img src="https://img.youtube.com/vi/-fPZsngNMFs/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+        <div class="article">
+            <h3>[Microsoft] - Phi4 - Multimodal - Installation locale</h3>
+			<div class="video">
+                <a href="https://www.youtube.com/watch?v=GAHWksMi9tw" target="_blank">
+                    <img src="https://img.youtube.com/vi/GAHWksMi9tw/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+			<p>Lien vers le modèle: <a href="https://huggingface.co/microsoft/Phi-4-multimodal-instruct">https://huggingface.co/microsoft/Phi-4-multimodal-instruct</a></p>
+        </div>
+		<div class="article">
+            <h3>Peux-t-on trouver les parties des dataset qui peuvent causer des soucis d'alignement de modèles LLM?</h3>
+			<div class="video">
+                <a href="https://www.youtube.com/watch?v=uRN2sQuK2CE" target="_blank">
+                    <img src="https://img.youtube.com/vi/uRN2sQuK2CE/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+        <div class="article">
+            <h3>Deepseek V3.1: DESTROYS O3 & Sonnet 3.7 (Zero Cost Setup)</h3>
+			<div class="video">
+                <a href="https://youtu.be/Hlz93KRJv00?si=qPZUL6b2zOT7GqTC" target="_blank">
+                    <img src="https://img.youtube.com/vi/Hlz93KRJv00/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+		<div class="article">
+            <h3>Gemini 2.5 Pro</h3>
+			<div class="video">
+                <a href="https://youtu.be/RxCZhltR9Cw?si=eZj1rbBx7rLWL2Ln" target="_blank">
+                    <img src="https://img.youtube.com/vi/RxCZhltR9Cw/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+    </div>
+	
+	<div id="dev" class="section">
+        <h2>Developpement</h2>
+		<div class="article">
+            <h3>[C#] Intégration de MCP avec Semantic Kernel - Guide complet</h3>
+			<p>Pour ceux que ça intéresse, voici comment utiliser MCP avec le framework SemanticKernel de Microsoft.</p>
+			<p>Lien vers le guide:  <a href="https://devblogs.microsoft.com/semantic-kernel/integrating-model-context-protocol-tools-with-semantic-kernel-a-step-by-step-guide/">https://devblogs.microsoft.com/semantic-kernel/integrating-model-context-protocol-tools-with-semantic-kernel-a-step-by-step-guide/</a></p>
+        </div>
+    </div>
+	
+    <div id="voix" class="section">
+        <h2>Voix</h2>
+		<div class="article">
+            <h3>Hume COOKED</h3>
+			<div class="video">
+                <a href="https://youtu.be/o6ZUSJqwgss?si=twauXnSQB53_33fL" target="_blank">
+                    <img src="https://img.youtube.com/vi/o6ZUSJqwgss/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+		<div class="article">
+            <h3>Orpheus 3B</h3>
+			<div class="video">
+                <a href="https://www.youtube.com/watch?v=otgzoKHdYpA" target="_blank">
+                    <img src="https://img.youtube.com/vi/otgzoKHdYpA/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+    </div>
+	
+	<div id="vision" class="section">
+        <h2>Vision</h2>
+		<div class="article">
+            <h3>[OpenIA] - Nouveau Modèle GPT 4o capable de générer d'incroyables images</h3>
+			<div class="video">
+                <a href="https://youtu.be/1tOK9IuEJz0?si=SveA-gcBaVlvZEYI" target="_blank">
+                    <img src="https://img.youtube.com/vi/1tOK9IuEJz0/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+		<div class="article">
+            <h3>Implémentation de la reconnaissance d'image avec .Net Microsoft.Extension.AI</h3>
+			<p>Exemple d'implémentation de reconnaissance d'image par un LLM en utilisant la lib Microsoft.Extension.AI</p>
+			<div class="video">
+                <a href="https://www.youtube.com/watch?v=kVPIjZppGYE" target="_blank">
+                    <img src="https://img.youtube.com/vi/kVPIjZppGYE/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+    </div>
+	
+	<div id="tech" class="section">
+        <h2>Tech</h2>
+		<div class="article">
+            <h3>Memryx MX3 - M.2 AI Accelerator pour Edge AI (Full Setup & Review)</h3>
+			<p>Petit module au format M2 qui peut supporter jusqu'à 16 chips, est en fait un accélérateur IA qui peut se plugger sur quasiment n'importe quel PC. De plus le SDK et la suite logiciel sont compatible windows/linux.</p>
+			<p>Chaque Chip ayant une puissance de calcul de 6 TFlops.</p>
+			<p>Page produit: <a href="https://memryx.com/products/">https://memryx.com/products/</a></p>
+			<p>Page de présentation PDF: <a href="https://memryx.com/wp-content/uploads/2024/11/MX3_M.2-Edge-AI-Module-Product-Brief.pdf">https://memryx.com/wp-content/uploads/2024/11/MX3_M.2-Edge-AI-Module-Product-Brief.pdf</a></p>
+			<div class="video">
+                <a href="https://www.youtube.com/watch?v=Zbo8QuvFyPc" target="_blank">
+                    <img src="https://img.youtube.com/vi/Zbo8QuvFyPc/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+			<p>Le packaging et les performances de ces modules sont assez intéressantes pour accélérer les applications de type IA, visions, inférance LLM etc.... sans avoir à passer par un GPU cher et gourmant en énergie.</p>
+        </div>
+		<div class="article">
+            <h3>Un PC alimenté par un réseau de neurones humain</h3>
+			<p>lien vers l'article: <a href="https://gizmodo.com/this-35000-computer-is-powered-by-trapped-human-brain-cells-2000573993">https://gizmodo.com/this-35000-computer-is-powered-by-trapped-human-brain-cells-2000573993</a></p>
+        </div>
+		<div class="article">
+            <h3>[NVIDIA] NVIDIA Isaac GR00T N1</h3>
+			<p>Nouveau modèle NVIDIA pour la robotique.</p>
+			<div class="video">
+                <a href="https://www.youtube.com/watch?v=WU3xEyIwMMU" target="_blank">
+                    <img src="https://img.youtube.com/vi/WU3xEyIwMMU/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+		<div class="article">
+            <h3>[NVIDIA] - GR00T N1s</h3>
+			<div class="video">
+                <a href="https://youtu.be/BFiBZI3nqhQ?si=xDKZJOxAK2nbLHc6" target="_blank">
+                    <img src="https://img.youtube.com/vi/BFiBZI3nqhQ/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+    </div>
+	
+	<div id="news" class="section">
+        <h2>News</h2>
+		<div class="article">
+            <h3>AI News: Vibe Jam, The BEST Small LLM, Claude Search, OpenAI Audio Models, ...</h3>
+			<div class="video">
+                <a href="https://youtu.be/8UCoqK34S60?si=hbzcdtREaL53ILJh" target="_blank">
+                    <img src="https://img.youtube.com/vi/8UCoqK34S60/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+    </div>
+	
+
+    <div class="footer">
+        <p>© 2025 - Cerebris | Tous droits réservés</p>
+		<div class="nav-link">
+			<a href="https://nutz95.github.io/NewsLetterAI/">Retour à l'index</a>
+        </div>
+    </div>
+</div>
