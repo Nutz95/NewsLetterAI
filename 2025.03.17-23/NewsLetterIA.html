@@ -1,0 +1,193 @@
+<style>
+    body {
+        font-family: Calibri, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 1024px;
+        margin: 20px auto;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+        text-align: center;
+        padding-bottom: 20px;
+        position: relative;
+    }
+    .header img {
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+    .header h1 {
+        color: #333;
+        margin: 0;
+    }
+    .period {
+        text-align: right;
+        font-size: 14px;
+        color: #555;
+        margin-top: 5px;
+    }
+    .toc {
+        background: #007BFF;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .toc ul {
+        list-style: none;
+        padding: 0;
+    }
+    .toc li {
+        margin: 5px 0;
+    }
+    .toc a {
+        color: white;
+        text-decoration: none;
+    }
+    .section {
+        margin-top: 20px;
+        padding: 15px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .section h2 {
+        color: #007BFF;
+    }
+    .article {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .article:last-child {
+        border-bottom: none;
+    }
+    .video {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .video img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+    .button {
+        display: block;
+        width: 200px;
+        margin: 20px auto;
+        padding: 10px;
+        background: #007BFF;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        color: #777;
+    }
+	.nav-link {
+		display: inline-block;
+		margin-top: 10px;
+	}
+	.nav-link a {
+		color: #007BFF;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	.nav-link a:hover {
+		text-decoration: underline;
+	}
+</style>
+
+<div class="container">
+    <div class="header">
+        <img src="https://bitbucket.org/3dms/newsletteria/raw/f7313b9a26a81df72276d7d450ef5626ab6c0ce3/Logo.png" alt="Logo Newsletter">
+        <h1> La Miscellanews Letter IA – by Nico</h1>
+        <div class="period">Période du 17 Mars au 23 Mars 2025</div>
+		<div class="nav-link">
+			<a href="https://nutz95.github.io/NewsLetterAI/">Retour à l'index</a>
+        </div>
+    </div>
+
+    <div class="toc">
+        <h3>Sommaire</h3>
+        <ul>
+            <li><a href="#llm">LLM et génération de texte</a></li>
+            <li><a href="#voix">Voix</a></li>
+			<li><a href="#vision">Vision</a></li>
+			<li><a href="#tech">Tech</a></li>
+        </ul>
+    </div>
+    
+    <div id="llm" class="section">
+        <h2>LLM et génération de texte</h2>
+        <div class="article">
+            <h3>Peux-t-on trouver les parties des dataset qui peuvent causer des soucis d'alignement de modèles LLM?</h3>
+			<div class="video">
+                <a href="https://www.youtube.com/watch?v=uRN2sQuK2CE" target="_blank">
+                    <img src="https://img.youtube.com/vi/uRN2sQuK2CE/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+        <div class="article">
+            <h3>Mistral Small 3.1</h3>
+			<div class="video">
+                <a href="https://www.youtube.com/watch?v=pdwHxvJ80eM" target="_blank">
+                    <img src="https://img.youtube.com/vi/pdwHxvJ80eM/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="voix" class="section">
+        <h2>Voix</h2>
+		<div class="article">
+            <h3>Orpheus 3B</h3>
+			<div class="video">
+                <a href="https://www.youtube.com/watch?v=otgzoKHdYpA" target="_blank">
+                    <img src="https://img.youtube.com/vi/otgzoKHdYpA/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+    </div>
+	
+	<div id="vision" class="section">
+        <h2>Vision</h2>
+		<div class="article">
+            <h3>Implémentation de la reconnaissance d'image avec .Net Microsoft.Extension.AI</h3>
+			<p>Exemple d'implémentation de reconnaissance d'image par un LLM en utilisant la lib Microsoft.Extension.AI</p>
+			<div class="video">
+                <a href="https://www.youtube.com/watch?v=kVPIjZppGYE" target="_blank">
+                    <img src="https://img.youtube.com/vi/kVPIjZppGYE/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+    </div>
+	
+	<div id="tech" class="section">
+        <h2>Tech</h2>
+		<div class="article">
+            <h3>[NVIDIA] NVIDIA Isaac GR00T N1</h3>
+			<p>Nouveau modèle NVIDIA pour la robotique.</p>
+			<div class="video">
+                <a href="https://www.youtube.com/watch?v=WU3xEyIwMMU" target="_blank">
+                    <img src="https://img.youtube.com/vi/WU3xEyIwMMU/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+    </div>
+	
+
+    <div class="footer">
+        <p>© 2025 - Cerebris | Tous droits réservés</p>
+		<div class="nav-link">
+			<a href="https://nutz95.github.io/NewsLetterAI/">Retour à l'index</a>
+        </div>
+    </div>
+</div>

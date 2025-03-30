@@ -1,0 +1,209 @@
+<style>
+    body {
+        font-family: Calibri, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 1024px;
+        margin: 20px auto;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+        text-align: center;
+        padding-bottom: 20px;
+        position: relative;
+    }
+    .header img {
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+    .header h1 {
+        color: #333;
+        margin: 0;
+    }
+    .period {
+        text-align: right;
+        font-size: 14px;
+        color: #555;
+        margin-top: 5px;
+    }
+    .toc {
+        background: #007BFF;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .toc ul {
+        list-style: none;
+        padding: 0;
+    }
+    .toc li {
+        margin: 5px 0;
+    }
+    .toc a {
+        color: white;
+        text-decoration: none;
+    }
+    .section {
+        margin-top: 20px;
+        padding: 15px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .section h2 {
+        color: #007BFF;
+    }
+    .article {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .article:last-child {
+        border-bottom: none;
+    }
+    .video {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .video img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+    .button {
+        display: block;
+        width: 200px;
+        margin: 20px auto;
+        padding: 10px;
+        background: #007BFF;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        color: #777;
+    }
+	.nav-link {
+		display: inline-block;
+		margin-top: 10px;
+	}
+	.nav-link a {
+		color: #007BFF;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	.nav-link a:hover {
+		text-decoration: underline;
+	}
+</style>
+
+<div class="container">
+    <div class="header">
+        <img src="https://bitbucket.org/3dms/newsletteria/raw/f7313b9a26a81df72276d7d450ef5626ab6c0ce3/Logo.png" alt="Logo Newsletter">
+        <h1> La Miscellanews Letter IA – by Nico</h1>
+        <div class="period">Période du 10 Mars au 16 Mars 2025</div>
+		<div class="nav-link">
+			<a href="https://nutz95.github.io/NewsLetterAI/">Retour à l'index</a>
+        </div>
+    </div>
+
+    <div class="toc">
+        <h3>Sommaire</h3>
+        <ul>
+            <li><a href="#llm">LLM et génération de texte</a></li>
+            <li><a href="#tech">Développement</a></li>
+        </ul>
+    </div>
+    
+    <div id="llm" class="section">
+        <h2>LLM et génération de texte</h2>
+        <div class="article">
+            <h3>Manus - l'agent All In One qui fait tout</h3>
+			<div class="video">
+                <a href="https://www.youtube.com/watch?v=wVvfXZm4Lvg" target="_blank">
+                    <img src="https://img.youtube.com/vi/wVvfXZm4Lvg/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+        <div class="article">
+            <h3>[Google] Gemma 3 - Bon en vision, moins pour le reste</h3>
+			<div class="video">
+                <a href="https://www.youtube.com/watch?v=rMSSuY4ppnY" target="_blank">
+                    <img src="https://img.youtube.com/vi/rMSSuY4ppnY/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+        <div class="article">
+            <h3>[OpenIA] - "Agent API"</h3>
+			<div class="video">
+                <a href="https://www.youtube.com/watch?v=-fPZsngNMFs" target="_blank">
+                    <img src="https://img.youtube.com/vi/-fPZsngNMFs/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+        <div class="article">
+            <h3>[Microsoft] - Phi4 - Multimodal - Installation locale</h3>
+			<div class="video">
+                <a href="https://www.youtube.com/watch?v=GAHWksMi9tw" target="_blank">
+                    <img src="https://img.youtube.com/vi/GAHWksMi9tw/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+			<p>Lien vers le modèle: <a href="https://huggingface.co/microsoft/Phi-4-multimodal-instruct">https://huggingface.co/microsoft/Phi-4-multimodal-instruct</a></p>
+        </div>
+		<div class="article">
+            <h3>Comment faire et déployer un server MCP en 10 minutes</h3>
+			<p>Pour rappel un serveur MCP est un serveur d'outil pour LLM.</p>
+			<p>C'est un protocol issue d'Anthropic qui a le vent en poupe en ce moment et que tous le monde est en train d'intégrer dans leurs environments.</p>
+			<p>Ce protocol permet vraiment de donner accès à un grand nombre d'outils que l'IA peut appeler au besoin.</p>
+			<div class="video">
+                <a href="https://www.youtube.com/watch?v=3Jsh4brTjE0" target="_blank">
+                    <img src="https://img.youtube.com/vi/3Jsh4brTjE0/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    <div id="tech" class="section">
+        <h2>Tech</h2>
+        <div class="article">
+            <h3>Memryx MX3 - M.2 AI Accelerator pour Edge AI (Full Setup & Review)</h3>
+			<p>Petit module au format M2 qui peut supporter jusqu'à 16 chips, est en fait un accélérateur IA qui peut se plugger sur quasiment n'importe quel PC. De plus le SDK et la suite logiciel sont compatible windows/linux.</p>
+			<p>Chaque Chip ayant une puissance de calcul de 6 TFlops.</p>
+			<p>Page produit: <a href="https://memryx.com/products/">https://memryx.com/products/</a></p>
+			<p>Page de présentation PDF: <a href="https://memryx.com/wp-content/uploads/2024/11/MX3_M.2-Edge-AI-Module-Product-Brief.pdf">https://memryx.com/wp-content/uploads/2024/11/MX3_M.2-Edge-AI-Module-Product-Brief.pdf</a></p>
+			<div class="video">
+                <a href="https://www.youtube.com/watch?v=Zbo8QuvFyPc" target="_blank">
+                    <img src="https://img.youtube.com/vi/Zbo8QuvFyPc/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+			<p>Le packaging et les performances de ces modules sont assez intéressantes pour accélérer les applications de type IA, visions, inférance LLM etc.... sans avoir à passer par un GPU cher et gourmant en énergie.</p>
+        </div>
+		<div class="article">
+            <h3>Un PC alimenté par un réseau de neurones humain</h3>
+			<p>lien vers l'article: <a href="https://gizmodo.com/this-35000-computer-is-powered-by-trapped-human-brain-cells-2000573993">https://gizmodo.com/this-35000-computer-is-powered-by-trapped-human-brain-cells-2000573993</a></p>
+        </div>
+		<div class="article">
+            <h3>Comment un robot à 110€ pourrait révolutionner la robotique</h3>
+			<div class="video">
+                <a href="https://www.youtube.com/watch?v=02k0AxZcetE" target="_blank">
+                    <img src="https://img.youtube.com/vi/02k0AxZcetE/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 - Cerebris | Tous droits réservés</p>
+		<div class="nav-link">
+			<a href="https://nutz95.github.io/NewsLetterAI/">Retour à l'index</a>
+        </div>
+    </div>
+</div>
