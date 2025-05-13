@@ -1,0 +1,193 @@
+<style>
+    body {
+        font-family: Calibri, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 1024px;
+        margin: 20px auto;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+        text-align: center;
+        padding-bottom: 20px;
+        position: relative;
+    }
+    .header img {
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+    .header h1 {
+        color: #333;
+        margin: 0;
+    }
+    .period {
+        text-align: right;
+        font-size: 14px;
+        color: #555;
+        margin-top: 5px;
+    }
+    .toc {
+        background: #007BFF;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .toc ul {
+        list-style: none;
+        padding: 0;
+    }
+    .toc li {
+        margin: 5px 0;
+    }
+    .toc a {
+        color: white;
+        text-decoration: none;
+    }
+    .section {
+        margin-top: 20px;
+        padding: 15px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .section h2 {
+        color: #007BFF;
+    }
+    .article {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .article:last-child {
+        border-bottom: none;
+    }
+    .video {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .video img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+    .button {
+        display: block;
+        width: 200px;
+        margin: 20px auto;
+        padding: 10px;
+        background: #007BFF;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        color: #777;
+    }
+	.nav-link {
+		display: inline-block;
+		margin-top: 10px;
+	}
+	.nav-link a {
+		color: #007BFF;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	.nav-link a:hover {
+		text-decoration: underline;
+	}
+</style>
+
+<div class="container">
+    <div class="header">
+        <img src="https://bitbucket.org/3dms/newsletteria/raw/f7313b9a26a81df72276d7d450ef5626ab6c0ce3/Logo.png" alt="Logo Newsletter">
+        <h1> La Miscellanews Letter IA – by Nico</h1>
+        <div class="period">Période du 14 Avril au 19 Avril 2025</div>
+		<div class="nav-link">
+			<a href="https://nutz95.github.io/NewsLetterAI/">Retour à l'index</a>
+        </div>
+    </div>
+
+    <div class="toc">
+        <h3>Sommaire</h3>
+        <ul>
+			<li><a href="#news">News</a></li>
+            <li><a href="#llm">LLMs</a></li>
+            <li><a href="#dev">Développement</a></li>
+        </ul>
+    </div>
+	
+	<div id="news" class="section">
+        <h2>News</h2>
+		<div class="article">
+            <h3>Gemini 2.5 Flash, o3 and o4, Claude Research, Kling 2.0, ...</h3>
+			<div class="video">
+                <a href="https://youtu.be/3V24jCz8q30" target="_blank">
+                    <img src="https://img.youtube.com/vi/3V24jCz8q30/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="llm" class="section">
+        <h2>LLMs</h2>
+		<div class="article">
+            <h3>[OPEN IA]: GPT 4.1:</h3>
+			<div class="video">
+                <a href="https://youtu.be/PuI8WxOEBFQ" target="_blank">
+                    <img src="https://img.youtube.com/vi/PuI8WxOEBFQ/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+        <div class="article">
+            <h3>[META] LLAMA 4:</h3>
+			<div class="video">
+                <a href="https://youtu.be/y46PXaxOavE" target="_blank">
+                    <img src="https://img.youtube.com/vi/y46PXaxOavE/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+        <div class="article">
+            <h3>[GOOGLE] Gemini 2.5 Flash en 6 minutes:</h3>
+			<div class="video">
+                <a href="https://youtu.be/EEDjm7VNrV4" target="_blank">
+                    <img src="https://img.youtube.com/vi/EEDjm7VNrV4/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+        <div class="article">
+            <h3>[IBM] Granite 3.2 2B avec raisonement</h3>
+			<div class="video">
+                <a href="https://youtu.be/aRLmwpvx18g" target="_blank">
+                    <img src="https://img.youtube.com/vi/aRLmwpvx18g/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="dev" class="section">
+        <h2>Développement</h2>
+		<div class="article">
+            <h3>Installation de n8n en local (windows/mac)</h3>
+            <div class="video">
+                <a href="https://youtu.be/TqwyEBVbpE0" target="_blank">
+                    <img src="https://img.youtube.com/vi/TqwyEBVbpE0/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 - Cerebris | Tous droits réservés</p>
+		<div class="nav-link">
+			<a href="https://nutz95.github.io/NewsLetterAI/">Retour à l'index</a>
+        </div>
+    </div>
+</div>
