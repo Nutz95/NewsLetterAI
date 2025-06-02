@@ -1,0 +1,255 @@
+<style>
+    body {
+        font-family: Calibri, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 1024px;
+        margin: 20px auto;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+        text-align: center;
+        padding-bottom: 20px;
+        position: relative;
+    }
+    .header img {
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+    .header h1 {
+        color: #333;
+        margin: 0;
+    }
+    .period {
+        text-align: right;
+        font-size: 14px;
+        color: #555;
+        margin-top: 5px;
+    }
+    .toc {
+        background: #007BFF;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .toc ul {
+        list-style: none;
+        padding: 0;
+    }
+    .toc li {
+        margin: 5px 0;
+    }
+    .toc a {
+        color: white;
+        text-decoration: none;
+    }
+    .section {
+        margin-top: 20px;
+        padding: 15px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .section h2 {
+        color: #007BFF;
+    }
+    .article {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .article:last-child {
+        border-bottom: none;
+    }
+    .video {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .video img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+    .button {
+        display: block;
+        width: 200px;
+        margin: 20px auto;
+        padding: 10px;
+        background: #007BFF;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        color: #777;
+    }
+	.nav-link {
+		display: inline-block;
+		margin-top: 10px;
+	}
+	.nav-link a {
+		color: #007BFF;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	.nav-link a:hover {
+		text-decoration: underline;
+	}
+</style>
+
+<div class="container">
+    <div class="header">
+        <img src="https://bitbucket.org/3dms/newsletteria/raw/f7313b9a26a81df72276d7d450ef5626ab6c0ce3/Logo.png" alt="Logo Newsletter">
+        <h1> La Miscellanews Letter IA – by Nico</h1>
+        <div class="period">Période du 12 Mai au 18 Mai 2025</div>
+		<div class="nav-link">
+			<a href="https://nutz95.github.io/NewsLetterAI/">Retour à l'index</a>
+        </div>
+    </div>
+
+    <div class="toc">
+        <h3>Sommaire</h3>
+        <ul>
+			<li><a href="#news">News</a></li>
+            <li><a href="#llm">LLMs</a></li>
+            <li><a href="#images">Images/Vidéo/3D</a></li>
+            <li><a href="#dev">Devellopement</a></li>
+        </ul>
+    </div>
+	
+	<div id="news" class="section">
+		<h2>News</h2>
+		<div class="article">
+            <h3>Qwen3, Meta et reddit, différents modèles liés à l'image</h3>
+			<p>Dans ces news:</p>
+			<ul>
+				<li>Qwen3</li>
+				<li>les résultats de méta sur ses expériences avec leurs LLM et redit</li>
+				<li>détection d'objets dans un nuage de points 3D</li>
+				<li>EdgeTAM (on Device Track Anything Model): modèle optimisé de SAM2 (Segment Anything Model), permet d'effectuer de la segmentation en temp réel, 22x plus rapide que SAM2</li>
+				<li>LTX Video: produit des vidéos à partir de mise à l'échelle progressive (jusqu'à 16 images par secondes sans quantization)</li>
+				<li>Maggie1 générateur vidéo autorégressif, fonctionne par segments de 24 images</li>
+				<li>UniAnimate DIT, permet d'animer des visages à partir d'une simple image</li>
+				<li>Sonic: modèle d'animation façiale guidé par l'audio</li>
+				<li>Part Field: modèle de segmentation 3D, il découpe automatiquement un objets en parties cohérentes.</li>
+			</ul>
+			<div class="video">
+                <a href="https://youtu.be/GF30jTy_erk" target="_blank">
+                    <img src="https://img.youtube.com/vi/GF30jTy_erk/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+	</div>
+
+    <div id="llm" class="section">
+        <h2>LLMs</h2>
+		<div class="article">
+            <h3>DeepSeek - Nouveau papier de recherche (MLA, MTP, FP8T, EP) décrivant les évolutions de leur modèle V3</h3>
+			<p>DeepSeek décrivent comment ils s'y prennent pour gagner en efficacité lors de l'entrainement et comment ils arrivent à faire aussi bien que les concurents avec beaucoup moins de ressources. Tout est en opensource.</p>
+			<div class="video">
+                <a href="https://youtu.be/T8Ty99O4m0w" target="_blank">
+                    <img src="https://img.youtube.com/vi/T8Ty99O4m0w/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+        <div class="article">
+            <h3>[GOOGLE] AlphaEvolve</h3>
+			<p>Google explique leur avancement sur Alpha Evolve capable de converger et de raffiner des solutions à des problèmes complexes vérifiable par du code.</p>
+			<p>exemple: Améliorer la vitesse de multiplication de matrices (il n'y a pas eu de nouvelles découvertes sur le sujet depuis 1960's)</p>
+			<div class="video">
+                <a href="https://youtu.be/x1FFLzTX-Kg" target="_blank">
+                    <img src="https://img.youtube.com/vi/x1FFLzTX-Kg/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+        <div class="article">
+            <h3>BLT (Byte Latent Transformer)</h3>
+			<p>Un nouveau concept de transformer qui utilise directement le text d'entrée comme chaine de bytes dans l'espace latent du transformer au lieu de passer par une tokenisation des différents éléments du texte.</p>
+			<p>Augmente les performances d'inférence des modèle par la suppression de la tokenisation.</p>
+			<div class="video">
+                <a href="https://youtu.be/7ujEALVK3fk" target="_blank">
+                    <img src="https://img.youtube.com/vi/7ujEALVK3fk/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="images" class="section">
+        <h2>Images/Vidéo/3D</h2>
+		<div class="article">
+            <h3>LTX V 13B:</h3>
+			<p>Modèle de génération de Vidéo.</p>
+			<p>Mise en place via ComfyUI.</p>
+            <div class="video">
+                <a href="https://youtu.be/ovoa0qlraYs" target="_blank">
+                    <img src="https://img.youtube.com/vi/ovoa0qlraYs/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+		<div class="article">
+            <h3>[Nvidia NIM] Blender et Comfy UI</h3>
+			<p>Génération et composition d'image à partir d'une scène 3D dans blender.</p>
+			<p>Permet de manière répétitive de gérer les éléments et la positions des éléments dans une image.</p>
+            <div class="video">
+                <a href="https://youtu.be/LOaFYFNVpEU" target="_blank">
+                    <img src="https://img.youtube.com/vi/LOaFYFNVpEU/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+		<div class="article">
+            <h3>[QWEN] RLHF (Reinforcement Learning Model by Humain Feedback)</h3>
+			<p>Proposition d'un modèle "WorldPM-72B" qui permet d'effectuer du Reinforcement Learning en choisissant le meilleurs résultat parmi plusieurs position d'un modèle, comme le ferait un humain.</p>
+			<p>Entièrement opensource, cette proposition à pour but d'améliorer les performances des futurs modèles de language.</p>
+            <div class="video">
+                <a href="https://youtu.be/JNNhXzwokZY" target="_blank">
+                    <img src="https://img.youtube.com/vi/JNNhXzwokZY/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+		<div class="article">
+            <h3>[OpenAI] Les prédictions d'open IA sur le futur d'internet, plus adapté au mode de l'IA.</h3>
+			<ul>
+				<li>OpenAI veut devenir le “core AI subscription”.</li>
+				<li>API et écosystème développeurs.</li>
+				<li>Le dilemme des grandes entreprises.</li>
+				<li>Comment les jeunes générations utilisent l’IA.</li>
+				<li>L’importance de la voix.</li>
+				<li>Conseil aux entreprises.</li>
+			</ul>
+            <div class="video">
+                <a href="https://youtu.be/xzLSAdbjvtk" target="_blank">
+                    <img src="https://img.youtube.com/vi/xzLSAdbjvtk/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="dev" class="section">
+        <h2>Devellopement</h2>
+		<div class="article">
+            <h3>Void, le concurrent à Cursor</h3>
+			<p>Tests et installation locale.</p>
+			<p>Connexion à Ollama + Qwen3.</p>
+            <div class="video">
+                <a href="https://youtu.be/lqPWzc9ZsoU" target="_blank">
+                    <img src="https://img.youtube.com/vi/lqPWzc9ZsoU/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 - Cerebris | Tous droits réservés</p>
+		<div class="nav-link">
+			<a href="https://nutz95.github.io/NewsLetterAI/">Retour à l'index</a>
+        </div>
+    </div>
+</div>

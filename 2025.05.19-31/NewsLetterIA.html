@@ -1,0 +1,370 @@
+<style>
+    body {
+        font-family: Calibri, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 1024px;
+        margin: 20px auto;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+        text-align: center;
+        padding-bottom: 20px;
+        position: relative;
+    }
+    .header img {
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+    .header h1 {
+        color: #333;
+        margin: 0;
+    }
+    .period {
+        text-align: right;
+        font-size: 14px;
+        color: #555;
+        margin-top: 5px;
+    }
+    .toc {
+        background: #007BFF;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .toc ul {
+        list-style: none;
+        padding: 0;
+    }
+    .toc li {
+        margin: 5px 0;
+    }
+    .toc a {
+        color: white;
+        text-decoration: none;
+    }
+    .section {
+        margin-top: 20px;
+        padding: 15px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .section h2 {
+        color: #007BFF;
+    }
+    .article {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .article:last-child {
+        border-bottom: none;
+    }
+    .video {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .video img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+    .button {
+        display: block;
+        width: 200px;
+        margin: 20px auto;
+        padding: 10px;
+        background: #007BFF;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        color: #777;
+    }
+	.nav-link {
+		display: inline-block;
+		margin-top: 10px;
+	}
+	.nav-link a {
+		color: #007BFF;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	.nav-link a:hover {
+		text-decoration: underline;
+	}
+</style>
+
+<div class="container">
+    <div class="header">
+        <img src="https://bitbucket.org/3dms/newsletteria/raw/f7313b9a26a81df72276d7d450ef5626ab6c0ce3/Logo.png" alt="Logo Newsletter">
+        <h1> La Miscellanews Letter IA – by Nico</h1>
+        <div class="period">Période du 12 Mai au 18 Mai 2025</div>
+		<div class="nav-link">
+			<a href="https://nutz95.github.io/NewsLetterAI/">Retour à l'index</a>
+        </div>
+    </div>
+
+    <div class="toc">
+        <h3>Sommaire</h3>
+        <ul>
+			<li><a href="#news">News</a></li>
+            <li><a href="#llm">LLMs</a></li>
+            <li><a href="#video">Vidéo</a></li>
+            <li><a href="#tech">Tech</a></li>
+        </ul>
+    </div>
+	
+	<div id="news" class="section">
+		<h2>News</h2>
+		<div class="article">
+            <h3>Google I/O:</h3>
+			<p>Dans ces news:</p>
+			<ul>
+				<li>Liste de tous les modèles Google (roadmap)</li>
+				<li>Progression de l'utilisation de leurs modèles (50X en 1 an)</li>
+				<li>Project Starline transformé en Google Beam => génération de scène 3D sur des écrans standard, ce qui donne l’immersion que la personne est vraiment avec vous, en face de vous.</li>
+				<li>Project Astra => permet l'intéraction d'une IA a partir d'un flux vidéo. L'ia a le contexte de ce qu'il se passe dans le flux vidéo en temp réel.</li>
+				<li>Project Mariner: projet qui peut interagir avec le web.</li>
+				<li>Agent mode</li>
+				<li>Gemini Diffusion génération de texte à base de diffusion</li>
+				<li>Gemini 2.5 pro - introduction de deep think</li>
+				<li>World models - modèles capable de comprendre le monde environment et la physique qui va avec. (comme veo) => critique pour les application robotiques.</li>
+				<li>Imagen 4</li>
+				<li>Veo 3 (text to video + audio)</li>
+				<li>Lyria 2 (génération de musique)</li>
+				<li>Flow (similaire à Sora, permet d'utilisation d'images de référence dans une scène vidéo).</li>
+				<li>lunettes Android XR (similaires aux Raybane Meta)</li>
+			</ul>
+			<div class="video">
+                <a href="https://youtu.be/dEuElwZPDXk" target="_blank">
+                    <img src="https://img.youtube.com/vi/dEuElwZPDXk/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+		<div class="article">
+            <h3>World Robot Conference 2025</h3>
+			<ul>
+				<li>Unitree G1 - Humanoide de Unitree, capable d'effectuer des tâches ménagère du quotidien (AMO, système capable d'ajuster le comportement du robot en temps réel en onction de son environnement)</li>
+				<li>B2 le robot chien pompier</li>
+				<li>Humanoid de Lenovo</li>
+				<li>ADAM, robot humanoide</li>
+				<li>World Robot conférence 2025</li>
+			</ul>
+			<div class="video">
+                <a href="https://youtu.be/yWKi4Bd6DHU" target="_blank">
+                    <img src="https://img.youtube.com/vi/yWKi4Bd6DHU/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+	</div>
+
+    <div id="llm" class="section">
+        <h2>LLMs</h2>
+		<div class="article">
+            <h3>[ByteDance ] Seed-Coder 8B LOCAL Test</h3>
+			<ul>
+				<li>model qui utilise une IA pour générer une partie de son dataset de pretraining.</li>
+			</ul>
+			<div class="video">
+                <a href="https://youtu.be/voPk4E_7T8k" target="_blank">
+                    <img src="https://img.youtube.com/vi/voPk4E_7T8k/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+        <div class="article">
+            <h3>[Anthropic] Claude 4:</h3>
+			<ul>
+				<li>Modèle capable d’exécuter de longues task dans le temps sans perdre le contexte.</li>
+				<li>Utilisation d'outils en parallèle</li>
+				<li>Modèle hybrides: capable de répondre rapidement et d'effectuer des tâches de raisonnement profond.</li>
+				<li>Introduction de Claude code (extension VScode + jetbrains)</li>
+			</ul>
+			<div class="video">
+                <a href="https://youtu.be/SqvDaSNYoCY" target="_blank">
+                    <img src="https://img.youtube.com/vi/SqvDaSNYoCY/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+			<div class="video">
+                <a href="https://youtu.be/Ucpt95krD-Q" target="_blank">
+                    <img src="https://img.youtube.com/vi/Ucpt95krD-Q/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+			<div class="video">
+                <a href="https://youtu.be/JTTfiJIw0Q4" target="_blank">
+                    <img src="https://img.youtube.com/vi/JTTfiJIw0Q4/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+        <div class="article">
+            <h3>Les modèles qui ont tendance à faire du Sabotage et du chantage:</h3>
+			<ul>
+				<li>Problème aperçus sur les modèles Codex-mini, o3, o4-mini.</li>
+				<li>non aperçus sur: Claude, Gemini, Grok</li>
+			</ul>
+			<div class="video">
+                <a href="https://youtu.be/XfjX1Vbhr-4" target="_blank">
+                    <img src="https://img.youtube.com/vi/XfjX1Vbhr-4/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+		<div class="article">
+            <h3>[DeepSeek] DeepSeek R1-0528 (mise à jour du modèle)</h3>
+			<ul>
+				<li>Performances proches de O3 et Gemini 2.5 pro.</li>
+				<li>Malgré les benchmark, les quelques tests de codage semblent un peu décevants comparé à Gemini 2.5 pro</li>
+			</ul>
+			<div class="video">
+                <a href="https://youtu.be/IrzhdyGy8tU" target="_blank">
+                    <img src="https://img.youtube.com/vi/IrzhdyGy8tU/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+		<div class="article">
+            <h3>[Microsoft] Interview du CEO de Microsoft sur le Futur de l'IA:</h3>
+			<ul>
+				<li>Microsoft met tous ses moyens dans l'IA.</li>
+				<li>Microsoft rétrofit son infrastructure Azure pour de venir des usines IA</li>
+				<li>Evolutions du pack office</li>
+				<li>Evolution des besoin en énergie et le besoin d'indicateur comme Token/Dollar/Watt</li>
+				<li>Evolutions de l'OS</li>
+			</ul>
+			<div class="video">
+                <a href="https://youtu.be/w87UvmMcmW4" target="_blank">
+                    <img src="https://img.youtube.com/vi/w87UvmMcmW4/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+		<div class="article">
+            <h3>[Microsoft] Bitnet:</h3>
+			<ul>
+				<li>Le but est de pouvoir executer un LLM purement avec son CPU en quantifiant en 1.58 bits en utilisant uniquement 3 valeurs possible par poids: {-1, 0, +1}.</li>
+				<li>Les modèles sont entrainés directement en utilisant cette quantification au lieu d'entrainer un model en FP32 et de le quantifier plus tard, ce qui ne dégrade pas ses performances.</li>
+				<li>Un modèle classique de 2B paramètres utilisen en général entre 2 et 5GB de VRAM, alors que bitnet utilise 0.4 GB</li>
+			</ul>
+			<div class="video">
+                <a href="https://youtu.be/Ilna0soNn9I" target="_blank">
+                    <img src="https://img.youtube.com/vi/Ilna0soNn9I/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+		<div class="article">
+            <h3>Comment fine-tuner un modèle en local : exemple avec Qwen 3:</h3>
+			<ul>
+				<li>utilisation de Unsloth + ubuntu 22.04 + GPU pour fine-tuner un LLM.</li>
+			</ul>
+			<div class="video">
+                <a href="https://youtu.be/igIBJuKra4M" target="_blank">
+                    <img src="https://img.youtube.com/vi/igIBJuKra4M/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+		<div class="article">
+            <h3>[Mistral] Mistral Medium 3:</h3>
+			<ul>
+				<li>Nouveau modèle IA “Medium 3”.</li>
+				<li>Performance et coût imbattables.</li>
+				<li>Polyvalence et puissance.</li>
+				<li>Respect de la vie privée et conformité européenne.</li>
+				<li>Le Chat Enterprise.</li>
+				<li>Déploiement flexible.</li>
+				<li>Ambitions européennes.</li>
+				<li>Un vrai challenger face à OpenAI.</li>
+			</ul>
+			<p>La vidéo décortique pourquoi Medium 3 pourrait bien bouleverser le marché de l’IA, et comment Mistral compte s’imposer face aux géants américains.</p>
+			<div class="video">
+                <a href="https://youtu.be/CtCsCvQlQ84" target="_blank">
+                    <img src="https://img.youtube.com/vi/CtCsCvQlQ84/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+		<div class="article">
+			<h3>ChatterBow - Un Text To Speech Opensource:</h3>
+			<ul>
+				<li>Permet de cloner une voix de manière assez efficace.</li>
+			</ul>
+			<div class="video">
+				<a href="https://youtu.be/trgPAtcVNfQ" target="_blank">
+					<img src="https://img.youtube.com/vi/trgPAtcVNfQ/hqdefault.jpg" alt="Aperçu vidéo">
+				</a>
+			</div>
+		</div>
+		<div class="article">
+			<h3>[Kyutai] - Unmute:</h3>
+			<ul>
+				<li>Speech-to-Text et Text-To-Speech intéractif autour d'un LLM.</li>
+				<li>Démo avant la release officielle en opensource.</li>
+			</ul>
+			<div class="video">
+				<a href="https://youtu.be/tfCxh0cKP2A" target="_blank">
+					<img src="https://img.youtube.com/vi/tfCxh0cKP2A/hqdefault.jpg" alt="Aperçu vidéo">
+				</a>
+			</div>
+		</div>
+    </div>
+	
+
+    <div id="video" class="section">
+        <h2>Vidéo</h2>
+		<div class="article">
+            <h3>[Bytedance] Phantom 14B:</h3>
+			<p>Modèle qui permet de faire du text to Video.</p>
+            <div class="video">
+                <a href="https://youtu.be/Ti3Z3DSRDw8" target="_blank">
+                    <img src="https://img.youtube.com/vi/Ti3Z3DSRDw8/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+		<div class="article">
+			<h3>Veo 3:</h3>
+			<ul>
+				<li>Modèle de google qui permet de faire du text to Video et qui inclus également la génération du son dans la vidéo!.</li>
+			</ul>
+			<div class="video">
+				<a href="https://youtu.be/Xj4BDwgEwd4" target="_blank">
+					<img src="https://img.youtube.com/vi/Xj4BDwgEwd4/hqdefault.jpg" alt="Aperçu vidéo">
+				</a>
+			</div>
+		</div>
+    </div>
+
+    <div id="tech" class="section">
+        <h2>Tech</h2>
+		<div class="article">
+            <h3>Une tracabilité des impressions 3D possible par IA</h3>
+			<a href="https://www.minimachines.net/actu/une-tracabilite-des-impressions-3d-possible-par-ia-134417" target="_blank">https://www.minimachines.net/actu/une-tracabilite-des-impressions-3d-possible-par-ia-134417</a>
+			<p>L’article présente une avancée dans la traçabilité des objets imprimés en 3D grâce à l’intelligence artificielle. Des chercheurs ont développé une méthode permettant d’identifier l’origine d’un objet imprimé en 3D en analysant les « empreintes » uniques laissées par chaque imprimante. Ces empreintes résultent des micro-imperfections et des variations spécifiques à chaque machine lors du processus d’impression.</p>
+			<p>L’intelligence artificielle est utilisée pour analyser ces marques subtiles et reconnaître la provenance d’un objet, un peu comme on identifie une empreinte digitale. Cette technologie pourrait avoir de nombreuses applications, notamment dans la lutte contre la contrefaçon, la traçabilité industrielle, ou encore la sécurité des pièces critiques.</p>
+			<p>L’article souligne aussi que cette avancée pourrait soulever des questions sur la vie privée et la liberté d’impression, car il deviendrait possible de remonter jusqu’à l’imprimante ayant fabriqué un objet.</p>
+        </div>
+		<div class="article">
+            <h3>Radxa Rock 4D : un format Raspberry PI avec PCIe, PoE et NPU</h3>
+			<a href="https://www.minimachines.net/actu/radxa-rock-4d-un-format-raspberry-pi-avec-pcie-poe-et-npu-134373" target="_blank">https://www.minimachines.net/actu/radxa-rock-4d-un-format-raspberry-pi-avec-pcie-poe-et-npu-134373</a>
+			<p>L’article présente la nouvelle carte Radxa Rock 4D, une alternative au Raspberry Pi, qui se distingue par plusieurs fonctionnalités avancées :</p>
+			<p>Format : La carte reprend le format standard du Raspberry Pi, ce qui la rend compatible avec de nombreux accessoires et boîtiers existants.</p>
+			<p>Connectique PCIe : Elle dispose d’un port PCI Express, permettant d’ajouter des extensions comme des SSD NVMe ou d’autres cartes d’extension, une rareté sur ce type de carte.</p>
+			<p>PoE (Power over Ethernet) : Le support PoE permet d’alimenter la carte directement via le câble réseau, pratique pour des installations professionnelles ou industrielles.</p>
+			<p>NPU (Neural Processing Unit) : La présence d’un NPU dédié permet d’accélérer les tâches d’intelligence artificielle et de traitement de données, ce qui ouvre la voie à des applications avancées en edge computing.</p>
+			<p>Processeur : La Rock 4D embarque un processeur performant, adapté à des usages variés, du multimédia à l’embarqué.</p>
+			<p>Compatibilité : Elle est compatible avec les systèmes d’exploitation Linux et Android.</p>
+			<p>L’article souligne que cette carte vise aussi bien les passionnés que les professionnels, en offrant plus de puissance et de possibilités d’extension que la plupart des Raspberry Pi classiques.</p>
+			</div>
+    </div>
+
+    <div class="footer">
+        <p>© 2025 - Cerebris | Tous droits réservés</p>
+		<div class="nav-link">
+			<a href="https://nutz95.github.io/NewsLetterAI/">Retour à l'index</a>
+        </div>
+    </div>
+</div>
