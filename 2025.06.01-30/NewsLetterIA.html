@@ -1,0 +1,450 @@
+<style>
+    body {
+        font-family: Calibri, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 1024px;
+        margin: 20px auto;
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+        text-align: center;
+        padding-bottom: 20px;
+        position: relative;
+    }
+    .header img {
+        max-width: 200px;
+        margin-bottom: 10px;
+    }
+    .header h1 {
+        color: #333;
+        margin: 0;
+    }
+    .period {
+        text-align: right;
+        font-size: 14px;
+        color: #555;
+        margin-top: 5px;
+    }
+    .toc {
+        background: #007BFF;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    .toc ul {
+        list-style: none;
+        padding: 0;
+    }
+    .toc li {
+        margin: 5px 0;
+    }
+    .toc a {
+        color: white;
+        text-decoration: none;
+    }
+    .section {
+        margin-top: 20px;
+        padding: 15px;
+        background: #f9f9f9;
+        border-radius: 8px;
+    }
+    .section h2 {
+        color: #007BFF;
+    }
+    .article {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    .article:last-child {
+        border-bottom: none;
+    }
+    .video {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .video img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+    .button {
+        display: block;
+        width: 200px;
+        margin: 20px auto;
+        padding: 10px;
+        background: #007BFF;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 14px;
+        color: #777;
+    }
+	.nav-link {
+		display: inline-block;
+		margin-top: 10px;
+	}
+	.nav-link a {
+		color: #007BFF;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	.nav-link a:hover {
+		text-decoration: underline;
+	}
+</style>
+
+<div class="container">
+    <div class="header">
+        <img src="https://bitbucket.org/3dms/newsletteria/raw/f7313b9a26a81df72276d7d450ef5626ab6c0ce3/Logo.png" alt="Logo Newsletter">
+        <h1> La Miscellanews Letter IA – by Nico</h1>
+        <div class="period">Période du 01 Mai au 31 Mai 2025</div>
+		<div class="nav-link">
+			<a href="https://nutz95.github.io/NewsLetterAI/">Retour à l'index</a>
+        </div>
+    </div>
+
+    <div class="toc">
+        <h3>Sommaire</h3>
+        <ul>
+			<li><a href="#news">News</a></li>
+            <li><a href="#llm">LLMs</a></li>
+			<li><a href="#images">Images/Vidéos</a></li>
+            <li><a href="#dev">Développment</a></li>
+            <li><a href="#tech">Tech</a></li>
+        </ul>
+    </div>
+	
+	<div id="news" class="section">
+		<h2>News</h2>
+		<div class="article">
+            <h3>Vision de NVIDIA pour l'avenir de l'IA : Systèmes Agentiques</h3>
+            <p>Points clés de la présentation de Jensen Huang :</p>
+            <h4>1. Vision de la nouvelle ère de l'IA</h4>
+            <ul>
+                <li>Huang a présenté la prochaine phase de l'intelligence artificielle : les systèmes agentiques (agentic systems), des IA autonomes capables de planifier, apprendre et agir avec un minimum de supervision.</li>
+                <li>Cette technologie s'inscrit dans un continuum entre les IA génératives et capables d'agir promptement dans des environnements complexes</li>
+            </ul>
+            
+            <h4>2. Innovations matérielles et logicielles</h4>
+            <ul>
+                <li>Annonces majeures concernant les nouveaux GPU NVIDIA, optimisés pour supporter cette architecture « agentique ».</li>
+                <li>Intégration totale avec le stack logiciel CUDA, TensorRT et leur écosystème IA (Vision, NLP, etc.).</li>
+            </ul>
+            
+            <h4>3. Collaboration avec les industries</h4>
+            <ul>
+                <li>Mise en lumière de partenariats avec secteurs stratégiques (automobile, santé, finance, robotique).</li>
+                <li>Démonstrations d'utilisation de leurs solutions hardware + IA dans des environnements réels.</li>
+            </ul>
+            
+            <h4>4. Nouvelles démos et cas d'usage concrets</h4>
+            <ul>
+                <li>Scénarios illustrés : robot assisté, planning automatisé, assistance médicale, simulation en temps réel.</li>
+                <li>Ces démos illustrent le rôle central que jouent les systèmes intelligents dans l'innovation industrielle.</li>
+            </ul>
+			<div class="video">
+                <a href="https://youtu.be/X9cHONwKkn4" target="_blank">
+                    <img src="https://img.youtube.com/vi/X9cHONwKkn4/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+		<div class="article">
+            <h3>Keynote AMD "Advancing AI" – Lisa Su</h3>
+            <p>Lisa Su, PDG d’AMD, a animé la keynote "Advancing AI" le 12 juin 2025, présentant la vision et les nouveautés d’AMD autour de l’intelligence artificielle.</p>
+            <h4>Vision d'AMD pour l’IA</h4>
+            <ul>
+                <li>AMD se positionne comme un acteur stratégique dans l’IA, couvrant l’intégralité de la chaîne technologique : matériel, logiciels, solutions d’écosystème.</li>
+                <li>L'objectif : répondre aux besoins croissants des entreprises et des industries face à la demande exponentielle en capacité de calcul IA.</li>
+            </ul>
+            <h4>Nouveaux produits et architectures</h4>
+            <ul>
+                <li>Présentation de CPU et GPU optimisés pour les charges IA (training et inference), avec des améliorations d’efficience et de performance.</li>
+                <li>Lancement de gammes end-to-end conçues pour l’IA, visant à offrir un écosystème complet intégré.</li>
+            </ul>
+            <h4>Partenariats et écosystème</h4>
+            <ul>
+                <li>Collaboration mise en avant : l’alliance entre AMD, éditeurs et acteurs clés renforce les capacités IA.</li>
+                <li>Mise à disposition d'outils et d’infrastructure pour développeurs, data centers et start-ups IA.</li>
+            </ul>
+			<div class="video">
+                <a href="https://youtu.be/5dmFa9iXPWI" target="_blank">
+                    <img src="https://img.youtube.com/vi/5dmFa9iXPWI/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+		<div class="article">
+            <h3>Mistral Reasoning, Gemini 2.5 Update, Flux Kontext [Max], Meta</h3>
+			<ul>
+				<li>Magistral- modèle de raisonement de Mistral</li>
+				<li>Elevenlab V3 alpha (text to speech)</li>
+				<li>Gemini 2.5 06/05 Upgrade</li>
+				<li>Veo3 Fast Released</li>
+				<li>Meta rachète ScaleAI</li>
+				<li>AI-Native Browser Dia</li>
+				<li>FLUX.1 Kontext [Max]</li>
+			</ul>
+			<div class="video">
+                <a href="https://youtu.be/6SbvLMFlhNY" target="_blank">
+                    <img src="https://img.youtube.com/vi/6SbvLMFlhNY/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+        <div class="article">
+            <h3>Gemini 2.5 Flash, Midjourney Video, OpenAI vs Microsoft, ...</h3>
+			<ul>
+				<li>exemple d'IDE qui se met à jour tout seul en fonction qu'on pose des questions à l'IA</li>
+				<li>nouvelle version de lunette IA (Oakley + Meta)</li>
+				<li>modèle vidéo de midjourney</li>
+				<li>Krea 1 - modèle text to image dont le but est d'éviter le style "IA" dans les images</li>
+				<li>HiggsField Ai - modèle d'édition d'image (spécialement orienté pour le marketting</li>
+				<li>Meta qui essaye de vouloir acheter pleins de boites dans l'IA</li>
+				<li>OpenAI et Microsoft</li>
+				<li>BrowserBase - Director (agent qui utilise le navigateur et qui écrit du code pour piloter le navigateur en javascript)</li>
+				<li>Contrat d'openAI avec le gouvernement US</li>
+			</ul>
+			<div class="video">
+                <a href="https://youtu.be/KSptmoBtvMc" target="_blank">
+                    <img src="https://img.youtube.com/vi/KSptmoBtvMc/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+        <div class="article">
+            <h3>DeepSeek R2 Delayed, Meta Vs OpenAI, OpenAI poursuivie, Imagen 4, ...</h3>
+			<ul>
+				<li>DeepSeek R2, sa sortie est retardée (principalement par manque de GPU)</li>
+				<li>Meta a débauché 4 Chercheurs de chez OpenAI</li>
+				<li>Les liens entre Microsoft et OpenAI</li>
+				<li>OpenAI introduit IYO (hear buds avec capacité IA)</li>
+				<li>ElevenLab - 11AI (Assitant IA vocal)</li>
+				<li>Replit - Leur croisante incroyable.</li>
+				<li>L'ex CTO de OpenAi prévoie de se lancer dans la compétition contre OpenAI, via sa nouvelle société TML (Thinking Machines Labs)</li>
+				<li>[Google] sortie de Imagen 4 / Imagen4 Ultra disponible via l'API de Gemini et Google AI Studio.</li>
+				<li>AlphaGenome: IA dédiée à la recherche génomique</li>
+				<li>Gemini CLI (Agent IA Opensource) disponible via le terminal.</li>
+				<li>L'utilisation de livres pour entraîner les modèles d'Antrhopic sans permissions à été jugé légal selon les loies du Copyright US</li>
+				<li>Nouveau papier de recherche d'Anthropic: Une partie des gens utilisent leur IA pour le support émotionnel.</li>
+			</ul>
+			<div class="video">
+                <a href="https://youtu.be/ann-bfuaaEs" target="_blank">
+                    <img src="https://img.youtube.com/vi/ann-bfuaaEs/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+        <div class="article">
+            <h3>Interview Avec Dylan Patel</h3>
+			<ul>
+				<li>Les problèmes de Méta avec Llama</li>
+				<li>Acquisition de ScaleAI</li>
+				<li>Relation entre OpenAI et Microsoft</li>
+				<li>GPT 4.5</li>
+				<li>Apple Vs Nvidia</li>
+				<li>On Device Vs Cloud AI</li>
+				<li>Nvidia Vs AMD</li>
+				<li>Grok</li>
+			</ul>
+			<div class="video">
+                <a href="https://youtu.be/cHgCbDWejIs" target="_blank">
+                    <img src="https://img.youtube.com/vi/cHgCbDWejIs/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+	</div>
+
+    <div id="llm" class="section">
+        <h2>LLMs</h2>
+		<div class="article">
+			<h3>L'architecture AGI fonctionne enfin</h3>
+            <p>Présentation du Modèle Video JEPA: Présentation d'un nouveau modèle vidéo basé sur un World Model qui comprend une achitecture de Predictor au lieu de Transformer qui semble très prometteur pour atteindre AGI.</p>
+			<div class="video">
+				<a href="https://youtu.be/ijEmo75zqZc" target="_blank">
+					<img src="https://img.youtube.com/vi/ijEmo75zqZc/hqdefault.jpg" alt="Aperçu vidéo">
+				</a>
+			</div>
+		</div>
+        <div class="article">
+            <h3>La quête du “Holy Grail” de l’IA</h3>
+            <p>Berman décrit comment l’IA idéale combinerait trois composantes essentielles : multimodalité, mémoire à long terme, et capacité d’action autonome dans des environnements complexes (sources : vcioglobal.com, launchconsulting.com, apnews.com).</p>
+            <h4>1. Interactions multimodales</h4>
+            <ul>
+                <li>L’IA “ultime” accepterait naturellement texte, voix, images et vidéo, permettant des interfaces plus intuitives qu’un simple prompt textuel.</li>
+            </ul>
+            <h4>2. Raisonnement, planification et mémoire</h4>
+            <ul>
+                <li><strong>Reasoning & planning</strong> : capacités de réflexion sur plusieurs étapes.</li>
+                <li><strong>Long-term memory</strong> : conservation de contexte pour interagir de façon cohérente dans le temps (sources : flowhunt.io, vcioglobal.com, launchconsulting.com).</li>
+            </ul>
+            <h4>3. IA agentique ou agents autonomes</h4>
+            <ul>
+                <li>Le Graal inclut la faculté pour l’IA de prendre des décisions et exécuter des actions en ligne, sur le cloud ou localement, comme le décrit le concept de systèmes agentiques (source : apnews.com).</li>
+            </ul>
+            <h4>4. Enjeux et pistes à venir</h4>
+            <ul>
+                <li>Berman insiste sur la nécessité d’architectures hybrides combinant ces trois piliers.</li>
+                <li>Il souligne les difficultés techniques, mais aussi la convergence des recherches (DeepMind, OpenAI, etc.) vers ces capacités.</li>
+            </ul>
+			<div class="video">
+                <a href="https://youtu.be/cMbGmdy2sfM" target="_blank">
+                    <img src="https://img.youtube.com/vi/cMbGmdy2sfM/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+
+        <div class="article">
+            <h3>Les raisons pour lesquels l'IA ne causera pas de chaumage massif:</h3>
+			<p>Point de vue qui explique que l'IA, malgrès ce qu'on peut en extrapolé, ne remplacera pas l'humain mais va plutôt compléter l'humain.</p>
+			<div class="video">
+                <a href="https://youtu.be/xQUPXeYGsYk" target="_blank">
+                    <img src="https://img.youtube.com/vi/xQUPXeYGsYk/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+		<div class="article">
+            <h3>Interview de Sam Altman (fondateur de OpenIA) sur Méta, GPT-5 ...</h3>
+			<ul>
+                <li>OpenAI est le principal concurrent de tous les gros acteurs de l'IA.</li>
+                <li>Meta a essayé de récupérer les chercheurs de OpenAI en leur proposant jusqu'à 100 000 000 $.</li>
+                <li>L'IA va découvrir de nouvelles sciences.</li>
+                <li>Futur de l'IA dans le monde physique (robots, voitures...).</li>
+                <li>Sortie de GPT-5 prévue pour cet été.</li>
+                <li>Définition de la Super Intelligence (AGI+).</li>
+            </ul>
+			<div class="video">
+                <a href="https://youtu.be/QdetlcfGNr0" target="_blank">
+                    <img src="https://img.youtube.com/vi/QdetlcfGNr0/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+		<div class="article">
+            <h3>SwarmAgentic Intelligence: l'IA qui construit des AI (LMU)</h3>
+			<ul>
+				<li>Framework pour IA qui construit de l'IA.</li>
+				<li>basée sur la dynamique des particules.</li>
+			</ul>
+			<div class="video">
+                <a href="https://youtu.be/3tiAvRcviiY" target="_blank">
+                    <img src="https://img.youtube.com/vi/3tiAvRcviiY/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+		<div class="article">
+            <h3>AI Reasoning w/ Multi-Agent RAG System (MCP):</h3>
+			<ul>
+				<li>Les types de RAG.</li>
+				<li>les derniers types de RAG et leur fonctionnement, ce que ça apporte.</li>
+			</ul>
+			<div class="video">
+                <a href="https://youtu.be/lv145NQ7JRc" target="_blank">
+                    <img src="https://img.youtube.com/vi/lv145NQ7JRc/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+        <div class="article">
+            <h3>[Google] -  Gemini 2.5:</h3>
+			<ul>
+				<li>La famille Gemini 2.5 s'étend avec la version Flash et Pro.</li>
+				<li>comparaison des tarfis et des perfromances.</li>
+				<li>les améliorations de ces modèles: multimodale (texte, video, audio, code repositories), 1M tokens contexte, native tool use.</li>
+			</ul>
+			<div class="video">
+                <a href="https://youtu.be/xukk_-mzP6Q" target="_blank">
+                    <img src="https://img.youtube.com/vi/xukk_-mzP6Q/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+        <div class="article">
+            <h3>OpenAudio S1 Mini TTS LOCAL Test & Install (Multilingual Voice Cloning!):</h3>
+			<ul>
+				<li>Un modèle ia Offline de clonage de voix multilangue capable de cloner notre voix et de parler dans d'autres languages..</li>
+			</ul>
+			<div class="video">https://youtu.be/tLvyjR685IM?si=YEN0Ur0O549xAFm4
+                <a href="https://youtu.be/tLvyjR685IM" target="_blank">
+                    <img src="https://img.youtube.com/vi/tLvyjR685IM/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+    </div>
+	
+	<div id="images" class="section">
+        <h2>Images/Vidéos</h2>
+		<div class="article">
+            <h3>[Black Forest Lab] - Flux Kontext</h3>
+            <p>Nouveau modèle de Black forest : Flux Kontex capable de conserver de manière assez impressionnante le context d'une image ou d'un élément d'une image et de modifier le context autour .</p>
+            <div class="video">
+                <a href="https://youtu.be/E0qmScftDIU" target="_blank">
+                    <img src="https://img.youtube.com/vi/E0qmScftDIU/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+		<div class="article">
+            <h3>Test du nouveau modèle de vision NVidia Model (Nemotron-Nano-VL-8B LOCAL Test & Demo)</h3>
+			<p>Test du modèle Nemotron Nano capable de vision..</p>
+			<p>Installation et mise en place du modèle.</p>
+			<p>La démo montre des tests classique de reconnaissance d'images diverses, OCR, test agentic en connectant un téléphone à un pc via ADB avec l'agent qui contrôle le téléphone.</p>
+            <div class="video">
+                <a href="https://youtu.be/Qk4EO3QYjQ4" target="_blank">
+                    <img src="https://img.youtube.com/vi/Qk4EO3QYjQ4/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="dev" class="section">
+        <h2>Développment</h2>
+		<div class="article">
+            <h3>La mort des IDEs</h3>
+            <ul>
+                <li>Vision de comment nos environement de développement vont changer avec l'évolution de l'IA.</li>
+                <li><strong>Warp</strong> : utilisé comme remplacement de terminal ou en mode agent (<strong>ADE : Agent Development Environment</strong>).</li>
+            </ul>
+            <div class="video">
+                <a href="https://youtu.be/fxQwNcL2mDI" target="_blank">
+                    <img src="https://img.youtube.com/vi/fxQwNcL2mDI/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="tech" class="section">
+        <h2>Tech</h2>
+		<div class="article">
+            <h3>Quel GPU pour les LLM - Choisir sa 5090</h3>
+            <ul>
+                <li>Comparaison de performances entre des Desktop/Laptop qui sont montés avec des RTX 5090:</li>
+                <li>Exemple avec Quenc2.5Coder 32B Q4</li>
+                <li>Desktop: 62Tokens/s (22-600W)</li>
+                <li>Laptop: 31Tokens/s (5-175W) semble equivalent à une 5070</li>
+            </ul>
+            <div class="video">
+                <a href="https://youtu.be/AScA7qJUIDc" target="_blank">
+                    <img src="https://img.youtube.com/vi/AScA7qJUIDc/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+        <div class="article">
+            <h3>Test du GMTEK EVO-X2  (Ryzen AI MAX+ 395, 128GB RAM partagé avec le GPU)</h3>
+            <div class="video">
+                <a href="https://youtu.be/B7GDr-VFuEo" target="_blank">
+                    <img src="https://img.youtube.com/vi/B7GDr-VFuEo/hqdefault.jpg" alt="Aperçu vidéo">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2025 - Cerebris | Tous droits réservés</p>
+		<div class="nav-link">
+			<a href="https://nutz95.github.io/NewsLetterAI/">Retour à l'index</a>
+        </div>
+    </div>
+</div>
